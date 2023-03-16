@@ -3,6 +3,9 @@ require "kotek/auth/version"
 module Kotek
   module Auth
     class Error < StandardError; end
-    # Your code goes here...
+    def hello
+      p 'hello'
+      p defined?(JWT)
+    end
   end
 end

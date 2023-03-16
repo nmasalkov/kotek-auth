@@ -3,20 +3,20 @@ require_relative 'lib/kotek/auth/version'
 Gem::Specification.new do |spec|
   spec.name          = "kotek-auth"
   spec.version       = Kotek::Auth::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["nikita.masalkov@softswiss.com"]
+  spec.authors       = ["Nikita Masalkov"]
+  spec.email         = ["nikitamasalkov.tang@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Pet gem}
+  spec.description   = %q{Pet gem}
+  spec.homepage      = "https://github.com/nmasalkov"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "https://github.com/nmasalkov/kotek-auth"
 
-  spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["homepage_uri"] = "https://github.com/nmasalkov"
+  spec.metadata["source_code_uri"] = "https://github.com/nmasalkov/kotek-auth"
+  spec.metadata["changelog_uri"] = "https://github.com/nmasalkov/kotek-auth"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
@@ -26,4 +26,6 @@ Gem::Specification.new do |spec|
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
+  spec.add_dependency "jwt"
+
 end
